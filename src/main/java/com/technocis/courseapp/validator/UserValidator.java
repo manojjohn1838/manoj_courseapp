@@ -2,8 +2,13 @@ package com.technocis.courseapp.validator;
 
 import com.technocis.courseapp.model.User;
 
-public class UserValidator {
 
+
+public class UserValidator {
+	/**This method used to validate the user details
+	 * @param user
+	 * @throws Exception
+	 */
 	public static void validateUser(User user) throws Exception {
 		if (user.getName() == null) {
 			throw new Exception("Invalid Name");
